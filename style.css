@@ -1,0 +1,255 @@
+:root{
+    --myCursor :url("mouse/Windows Cursor.png")0 0 ,auto;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+}
+*{
+ cursor: var(--myCursor);
+ user-select: none;
+}
+
+html , body{
+    overflow: hidden;
+}
+
+.main-div{
+    position: relative;
+ width: 100vw;
+    height: 100vh;
+}
+#bcg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    filter: blur(3px);
+}
+
+#owl{
+    position: absolute;
+    height: 600px;
+    width: 600px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    transition: transform 0.4s;
+}
+#owl:active{
+    transform:translate(-50% ,-50%) scale(80%);
+}
+.menu-div{
+display: grid;
+grid-template-rows:repeat(3,1fr);
+position: absolute;
+top: 30px;
+right: 50px;
+bottom: 30px;
+width: 250px;
+justify-content: center;
+align-items: center;
+}
+
+.btn{ 
+color: white;
+font-family: cursive;
+font-size: larger;
+background-color:#588699 ;
+border: solid 5px #324c56;
+border-radius: 20px;
+width: 200px;
+height: 50px;
+transition: background-color 0.5s;
+transition: border-color 0.5s;
+}
+
+.btn:hover{
+    background-color:#324c56 ;
+    border-color: #588699;
+}
+
+.points{
+    display: flex;
+    position: absolute;
+    bottom: 30px;
+    right: 550px;
+    left: 550px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    font-family: cursive;
+}
+.points-el{
+    margin: 20px;
+    color: white;
+}
+
+#scored-points{
+    color: white;
+font-family: cursive;
+font-size: larger;
+background-color:#588699 ;
+border: solid 5px #324c56;
+border-radius: 20px;
+width: 200px;
+height: 50px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.custom-menu{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows:repeat(4,1fr);
+    position: absolute;
+    height: 500px;
+    width: 750px;
+    top: 100px;
+    bottom: 100px;
+    justify-self: center;
+    background-color: #324c56;
+    border: solid 10px #588699;
+    border-radius: 10px;
+    justify-items: center;
+    align-items: center;
+    overflow: scroll;
+    visibility:hidden;
+    text-align: center;
+}
+.custom-owls{
+    height: 200px;
+    width: 200px;
+}
+.owls-names{
+    color: white;
+    font-family: cursive;
+}
+.clicker-menu{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows:repeat(4,1fr);
+    position: absolute;
+    height: 500px;
+    width: 750px;
+    top: 100px;
+    bottom: 100px;
+    justify-self: center;
+    background-color: #324c56;
+    border: solid 10px #588699;
+    border-radius: 10px;
+    justify-items: center;
+    align-items: center;
+    overflow: scroll;
+    visibility:hidden;
+    text-align: center;
+}
+
+.clicker_cursors{
+    height: 100px;
+    width: 100px;
+}
+#win-cur{
+    transform: translate(25% , 0);
+}
+.rebirth-menu{
+    color: white;
+    font-family: cursive;
+    position: absolute;
+    top: 100px;
+    bottom: 100px;
+    background-color: #324c56;
+    border: solid 5px #588699;
+    border-radius: 10px;
+    height: 400px;
+    width: 600px;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    visibility: hidden;
+}
+.reb-r1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.reb-r2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+
+}
+.reb-text{
+    color: white;
+font-family: cursive;
+font-size: larger;
+background-color:#588699 ;
+border: solid 5px #324c56;
+border-radius: 20px;
+width: 200px;
+height: 50px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+#reb-met{
+    width: 150px;
+    height: 40px;
+}
+#reb-x{
+    color: white;
+    font-family: cursive;
+}
+#reb-con1{color: rgb(234, 71, 71)}
+#reb-con2{color: rgb(234, 71, 71)}
+#reb-con3{color: rgb(234, 71, 71)}
+
+
+.reb-btn-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.r2-e1{
+    margin: 30px;
+    background-color: white;
+    border-radius: 10px;
+}
+.losha{
+    position: absolute;
+    left: 50px;
+    top: 155px;
+}
+
+.Secret-owl{
+    visibility: hidden;
+}
+.Secret-cursor{
+    visibility: hidden;
+}
+
+
+ #reb-met::-webkit-meter-bar {
+    background: #222;
+    border: 3px solid #588699;
+    border-radius: 20px;
+}
+::-webkit-scrollbar{
+    background-color: #324c56;
+}
+::-webkit-scrollbar-corner{
+    background-color: #324c56;
+}
+.black-text{
+    color: black;
+}
