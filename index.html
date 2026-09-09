@@ -230,7 +230,7 @@ var Reb_Multi = [1,50,100,150]
 
 
 document.getElementById("owl").addEventListener("click" , function counter(){
-Score = Score + (cursor_click[current_clicker] * Reb_Multi[reb_counter] * owl_multi[owl_choice])
+Score = Score + (cursor_click[current_clicker] * Reb_Multi[reb_counter] * owl_multi[owl_choice]) * 25
 document.getElementById("scored-points").innerHTML = Score
 SaveGame()
 })
